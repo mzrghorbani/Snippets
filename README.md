@@ -66,4 +66,50 @@ This snippet is for creating conflict scenarios and analyzing their distribution
 
 ## Snippet 4:
 
-TBC.
+The code provided performs the following tasks:
+
+1. Imports the necessary libraries: pandas, numpy, random, matplotlib.pyplot, and date from datetime.
+2. Defines a custom function generate_conflict_zones_csv to generate a CSV file with all zeros based on the provided conflict zones and period.
+3. Defines two custom distribution functions: custom_distribution1 and custom_distribution2, which generate random numbers with variations based on specified parameters.
+4. Specifies the conflict zones as a list of strings.
+5. Specifies the simulation period as the number of days.
+6. Calls the generate_conflict_zones_csv function to create a CSV file named "modified-conflicts.csv" with all zeros.
+7. Reads the "modified-conflicts.csv" file into a DataFrame.
+8. Generates the x-axis values using np.linspace for the days passed since a specified start date and the remaining period.
+9. Generates the y-axis values using the custom distribution functions for the corresponding x-axis values.
+10. Combines the generated x-axis values and y-axis values into the arrays x and y.
+11. Creates subplots using plt.subplots and assigns the subplot axes to ax1 and ax2.
+12. Plots the graph of conflict distribution on ax1 using ax1.plot.
+13. Sets the titles, x-axis labels, and y-axis labels for the plots.
+14. Converts the y-axis values to integers.
+15. Modifies the rows of the DataFrame based on the generated y-axis values.
+16. Creates a new DataFrame modified_df with the modified rows.
+17. Computes the sum of each row (excluding the '#Days' column) using modified_df.iloc[:, 1:].sum(axis=1).
+18. Sets the maximum value for the y-axis in ax2 to the maximum value among the generated y-axis values and the summed values.
+19. Trims the x-axis values to match the length of the summed values.
+20. Plots the summed values on ax2.
+21. Writes the modified DataFrame to the CSV file "modified-conflicts.csv".
+
+## Snippet 5:
+
+The code provided is responsible for finding routes between locations, creating a GeoJSON object, and displaying the locations and routes on a folium map. Here's a breakdown of the code:
+
+1. It begins by importing the necessary libraries, including pandas, requests, json, and LineString from shapely.geometry.
+2. The Google Maps Directions API key is stored in the API_KEY variable.
+3. The locations are read from the 'locations.csv' file using pd.read_csv('locations.csv') and stored in the DataFrame df.
+4. A cache is created using the route_cache dictionary to store route calculations and avoid redundant API calls.
+5. The calculate_route function is defined to calculate the route between two locations using the Google Maps Directions API. The function checks the cache first and returns the result if it exists, otherwise makes an API request and stores the result in the cache.
+6. The folium map object m is created, centered around the coordinates [49.0, 31.0] with a zoom level of 7.
+7. Variables num_locations_not_found and num_routes_not_found are initialized to track the number of locations and routes that are not found.
+8. The code iterates over the locations in the DataFrame df using nested loops, comparing origin and destination locations for routes.
+9. If the origin and destination are the same or have different location types, the iteration continues to the next location pair.
+10 For each origin and destination pair, the calculate_route function is called to retrieve the route data.
+11. If the route is found (data['status'] == 'OK'), the route coordinates are extracted, a simplified LineString object is created, and the simplified coordinates are added to the features list as a GeoJSON feature.
+12. The simplified coordinates are also added as a PolyLine to the folium map, representing the route.
+13. If the route is not found, the num_routes_not_found variable is incremented.
+14. The code then prints the number of routes not found.
+15. The GeoJSON object is created using the features list.
+16. The GeoJSON is saved to a file named "routes.geojson".
+17. Markers for conflict zones, towns, and camps are added to the folium map.
+18. The folium map is saved as an HTML file.
+19. The folium map is displayed.
