@@ -1,0 +1,11 @@
+#name,#name,country,latitude,longitude,location_type,conflict_date,population
+Segou,Segou,Mali,13.5547,-4.1183,conflict_zone,1,2338349.0
+Gao,Gao,Mali,15.8421,-0.2999,conflict_zone,1,542304.0
+Tombouctou,Tombouctou,Mali,15.8436,-4.3255,conflict_zone,1,674793.0
+Mopti,Mopti,Mali,15.3684,-4.2628,conflict_zone,1,2036209.0
+Kayes,Kayes,Mali,14.5113,-8.8428,conflict_zone,4,1993615.0
+Sikasso,Sikasso,Mali,12.1008,-4.6909,conflict_zone,8,2643179.0
+Koulikoro,Koulikoro,Mali,14.3779,-7.669,conflict_zone,10,2422108.0
+Menaka,Menaka,Mali,15.8744,2.1355,conflict_zone,33,54456.0
+Kidal,Kidal,Mali,20.2581,0.9904,conflict_zone,46,67739.0
+Bamako,Bamako,Mali,12.5205,-7.9292,conflict_zone,85,1810366.0
