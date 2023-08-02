@@ -1,4 +1,4 @@
-#name,#name,country,country_code,latitude,longitude,location_type,conflict_date,population
+name,#name,country,country_code,latitude,longitude,location_type,conflict_date,population
 Chad,Chad,Chad,Td,13.5849455,14.3791912,camp,,20000
 Diffa,Niger,Niger,Ne,13.3132,12.6159,camp,,300000
 Minawao,Cameroon,Cameroon,Cm,10.5514,13.8646,camp,,150000
@@ -9,7 +9,7 @@ Kaduna,Kaduna,Nigeria,Ng,11.0686,6.7884,conflict_zone,0,9032200
 Benue,Benue,Nigeria,Ng,7.9836,8.5899,conflict_zone,0,6141300
 Enugu,Enugu,Nigeria,Ng,6.6592,7.7596,conflict_zone,0,4690100
 Kebbi,Kebbi,Nigeria,Ng,12.2175,4.3792,conflict_zone,0,5563900
-Rivers,Rivers,Nigeria,Ng,4.5778,6.8859,conflict_zone,1,7476800
+Rivers,Rivers,Nigeria,Ng,4.851227660667656,6.978675171662471,conflict_zone,1,7476800
 Federal Capital Territory,Federal Capital Territory,Nigeria,Ng,9.1193,6.8673,conflict_zone,2,3067500
 Ekiti,Ekiti,Nigeria,Ng,7.9561,5.5502,conflict_zone,2,3592200
 Zamfara,Zamfara,Nigeria,Ng,11.8519,5.3312,conflict_zone,3,5833500
@@ -31,7 +31,7 @@ Kano,Kano,Nigeria,Ng,12.0218,8.5224,conflict_zone,23,15462200
 Akwa Ibom,Akwa Ibom,Nigeria,Ng,5.0049,7.6103,conflict_zone,25,4979400
 Oyo,Oyo,Nigeria,Ng,7.9744,3.2438,conflict_zone,26,7976100
 Bauchi,Bauchi,Nigeria,Ng,10.3134,9.8433,conflict_zone,27,8308800
-Adamawa,Adamawa,Nigeria,Ng,9.4553,11.9302,conflict_zone,29,4902100
+Adamawa,Adamawa,Nigeria,Ng,9.26313440755997,12.458786520350838,conflict_zone,29,4902100
 Taraba,Taraba,Nigeria,Ng,7.8667,10.9667,conflict_zone,32,3609800
 Jigawa,Jigawa,Nigeria,Ng,12.7267,10.4205,conflict_zone,34,7499100
 Sokoto,Sokoto,Nigeria,Ng,13.2003,6.4071,conflict_zone,34,6391000
