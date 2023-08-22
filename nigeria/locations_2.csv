@@ -1,0 +1,6 @@
+name,#name,country,country_code,latitude,longitude,location_type,conflict_date,population
+Chad,Chad,Chad,Td,13.5849455,14.3791912,camp,,20000
+Diffa,Niger,Niger,Ne,13.3132,12.6159,camp,,300000
+Borno,Borno,Nigeria,Ng,11.5221,13.6856,conflict_zone,0,6111500
+Ondo,Ondo,Nigeria,Ng,7.2526,5.1931,conflict_zone,0,5316600
+Kaduna,Kaduna,Nigeria,Ng,11.0686,6.7884,conflict_zone,0,9032200
